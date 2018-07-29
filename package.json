@@ -1,0 +1,28 @@
+{
+  "name": "jeppley16.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeppley16/jeppley16.github.io.git"
+  },
+  "author": "Justin Eppley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeppley16/jeppley16.github.io/issues"
+  },
+  "homepage": "https://github.com/jeppley16/jeppley16.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
