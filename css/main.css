@@ -1,0 +1,42 @@
+.circle, .watch-face {
+    height: 12vw;
+    width: 12vw;
+}
+
+
+
+.watch-face {
+    -webkit-animation: pulse 10s cubic-bezier(.5,0,.5,1) normal infinite;
+    animation: pulse 10s cubic-bezier(.5,0,.5,1) normal infinite;
+    margin-left: 41vw;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    opacity: .5;
+}
+
+.circle:first-child {
+    background: #2f00ff;
+    -webkit-animation: circle-1 10s ease normal infinite;
+    animation: circle-1 10s ease normal infinite;
+}
+
+.circle:nth-child(6) {
+    background: #016afb;
+    -webkit-animation: circle-6 10s ease normal infinite;
+    animation: circle-6 10s ease normal infinite;
+}
+
+
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: screen;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+    -webkit-animation: center 6s infinite;
+    animation: center 6s infinite;
+}
+
+
