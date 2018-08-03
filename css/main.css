@@ -1,10 +1,11 @@
 body {
-/*    background-image: url(clear.jpg);*/
     margin: 15px;
+    color: #0a2934;
+
 }
 
 header {
-    background-image: url(clear.jpg);
+    background-image: url(../images/clear.jpg);
     background-size: cover;
 }
 
@@ -20,8 +21,34 @@ header {
     text-align: center;
 }
 
+#name {
+    color: #6BB9D3;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#tagline {
+    font-style: italic;
+    color: white;
+}
+
 h3 {
     margin: 0;
+}
+
+.project-title {
+    margin-bottom: 10px;
+}
+
+.project-desc {
+    margin-top: 10px;
+}
+
+
+
+.icons {
+    width: auto;
+    height: 50px;
+    margin: 20px;
 }
 
 
