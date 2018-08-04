@@ -9,6 +9,11 @@ header {
     background-size: cover;
 }
 
+#name {
+    color: #6BB9D3;
+    font-family: 'Electrolize', sans-serif;
+}
+
 .banner-text {
     margin-left: 5px;
     margin-right: 5px;
@@ -17,39 +22,52 @@ header {
     text-align: right;
 }
 
-.about {
-    text-align: center;
-}
-
-#name {
-    color: #6BB9D3;
-    font-family: 'Electrolize', sans-serif;
-}
-
 #tagline {
     font-style: italic;
     color: white;
 }
 
-h3 {
-    margin: 0;
+.strength {
+    text-align: center;
 }
+
+/*.portfolio {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}*/
+
+.project {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+
+
 
 .project-title {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .project-desc {
     margin-top: 10px;
 }
 
-
-
 .icons {
-    width: auto;
-    height: 50px;
-    margin: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.icon {
+    width: auto;
+    height: 25px;
+    /*margin: 20px;
+}
+
 
 
 
