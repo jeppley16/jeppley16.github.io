@@ -9,6 +9,19 @@ header {
     background-size: cover;
 }
 
+
+
+#circle1 {
+    background: mediumaquamarine;
+    height: 25px;
+    width: 25px;
+    margin: 0px;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-radius: 2% 50%;
+    /*order: -1;*/
+}
+
 #name {
     color: #6BB9D3;
     font-family: 'Electrolize', sans-serif;
@@ -51,6 +64,14 @@ header {
 .project-title {
     margin-bottom: 10px;
     font-size: 18px;
+}
+
+.project-image {
+    transition: all 1s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
 }
 
 .project-desc {
