@@ -214,30 +214,44 @@ i.material-icons:hover {
 }
 
 
-
-
-
-
 /*#############  Portfolio Section ###########*/
 
 
+.card {
+    margin-bottom: 15px;
 
-
-
-.project {
-    display: flex;
-    justify-content: flex-start;
-    /*justify-content: space-between;*/
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid gray;
-    margin: 10px;
-    width: 300px;
-    height: 400px;
-    /*flex-wrap: wrap;*/
 }
 
 
+.project {
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    border: 2px solid gray;
+    /*margin: 10px;*/
+    /*width: 300px;*/
+    /*height: 400px;*/
+    /*flex-wrap: wrap;*/
+}
+
+.tools {
+    display: flex;
+}
+
+
+.html {
+    flex: 1;
+}
+
+.css {
+    flex: 0.71;
+}
+
+.boot {
+    flex: 2;
+}
 
 .project-title {
     margin-bottom: 10px;
