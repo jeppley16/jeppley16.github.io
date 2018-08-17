@@ -8,9 +8,12 @@
 
 	<!-- CSS -->
 	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum|Electrolize|Kanit|Special+Elite" rel="stylesheet">
+	<!-- <link rel='stylesheet' href='css/timsite.css'> -->
 	<link rel="stylesheet" href="css/main.css">
 
 	<title>Justin Eppley | Web Developer</title>
@@ -23,63 +26,98 @@
 
 <!-- 	Instantiating Standard Bootstrap Navbar -->		
 
-	<nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header">
+	<nav class="navbar navbar-expand-lg navbar-light light-bg">
 
-			<!-- Drop down menu button that appears when screen gets smaller -->
+		<a href="#" 
+			class="navbar-brand"
+			id='brand-text'> 
+			<div 
+			class="circle"
+			id='circle1'></div>
 
-			<button 
-				type="button" 
-				class="navbar-toggle collapsed flex-item" 
-				data-toggle="collapse" 
-				data-target="#bs-nav-demo" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		    	<span class="icon-bar"></span>
-		    </button>	    
+		</a>
 
 
-			<a href="#" 
-				class="navbar-brand flex-item"
-				id='brand-text'> 
-				<div 
-				class="circle flex-item"
-				id='circle1'></div>	
-				<!-- <div class="watch-face"> -->
-
-			<!-- 		<div class="circle"></div>
-					<div class="circle"></div>
-					<div class="circle"></div>
-					<div class="circle"></div>
-					<div class="circle"></div> -->
-				<!-- </div> -->
-			</a>
-		</div>
-		
-
-		<!-- Defines navigation bar setup on max screen-->
+		<button 
+		 	class="navbar-toggler" 
+		 	type="button" 
+		 	data-toggle="collapse" 
+		 	data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" 
+		 	aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+    	</button>
 
 		<div 
 			class="collapse navbar-collapse" 
-			id="bs-nav-demo">  <!-- id used to define navigation content -->
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+			id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a 
+		        	class="nav-link" 
+		        	href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a 
+		        	class="nav-link" 
+		        	href="#">About Me</a>
+		      </li>
+		       <li class="nav-item">
+		        <a 
+		        	class="nav-link" 
+		        	href="#">Portfolio</a>
+		      </li>
 
+<!-- 	Adding a dropdown submenu, if needed -->
+
+		      <!-- <li class="nav-item dropdown">
+		        <a 
+		        	class="nav-link dropdown-toggle" 
+		        	href="#" 
+		        	id="navbarDropdown" 
+		        	role="button" 
+		        	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown
+		        </a>
+		        <div 
+		        	class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a 
+		          	class="dropdown-item" 
+		          	href="#">Action</a>
+		          <a 
+		          	class="dropdown-item" 
+		          	href="#">Another action</a>
+		          <div class="dropdown-divider"></div>
+		          <a 
+		          	class="dropdown-item" 
+		          	href="#">Something else here</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a 
+		        	class="nav-link disabled" 
+		        	href="#">Disabled</a>
+		      </li> -->
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input 
+		      	class="form-control mr-sm-2" 
+		      	type="search" 
+		      	placeholder="Search" 
+		      	aria-label="Search">
+		      <button 
+		      	class="btn btn-outline-success my-2 my-sm-0" 
+		      	type="submit">Search</button>
+		    </form>
+		  </div>
+	</nav>	
+			
 
 <!-- Main Headline Section -->
 
 
 	<header class="jumbotron">
 		<div class="container">
-			<div class="row banner-text">
+			<div class="d-flex flex-column banner-text">
 				<div>
 					<h1 id='name'>Justin Eppley</h1>
 				</div>
@@ -91,49 +129,72 @@
 	</header>
 
 <!-- About Me Section -->
+	
+<!-- 	<div class="section section-do" id="whatwedo">
+		 <div class="points">
+			<div class="point point-floating-1"></div>
+			<div class="point point-floating-2"></div>
 
-	<div class="container">
+			<div class="point point-floating-7"></div>
+			<div class="point point-floating-8"></div>
+			<div class="point point-floating-9"></div>
+		</div> -->
+		 <div class="container">
+		 	<div class='row'>
+			 	<div class="col-sm text-center">
+					<h2 class="title">Areas of expertise</h2>
+					<div class="space-50"></div>
+				</div>
+			</div> 
+			<div class="row">
 
+				<div class="col-md-4">
+					<div class="info d-flex flex-column align-items-center justify-content-center">
+						<div class="icon icon-info icon-round icon-lg">
+								<i class='material-icons chart-icon'>show_chart</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">Data-First Development</h4>
+							<h5 class="desc">
+								Justin has nearly a decade experience in data analysis, which includes over five years wrangling "big data" and seven years with hands on statistical modeling -- the fuel for any foundationally great future application.
+							</h5>
+						</div>
+					</div>
+				</div>
 
-		<div class="row strength">
-			<div class='row'>
-				Strong believer in a data-first approach to web and app development
-			</div>
-			<div class='row'>
-				<a href="#">More Info</a>
-			</div>
-			<div class='row'>
-				<p>Justin has nearly a decade experience in data analysis, which includes over five years wrangling "big data" and seven years with hands on statistical modeling -- the fuel for any foundationally great future application.</p>
+				<div class="col-md-4">
+					<div class="info d-flex flex-column align-items-center justify-content-center">
+						<div class="icon icon-info icon-round icon-lg">
+								<i class='material-icons group-icon'>group</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">Collaborative design relationship</h4>
+							<h5 class="desc">
+								Justin has worn several 'hats' in his career (data analyst, business owner, leader of data science team, client relationship manager) making him uniquely qualified to speak to diverse audiences of a business.<b>No engineer or strategist left behind.</b>
+							</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="info d-flex flex-column align-items-center justify-content-center">
+						<div class="icon icon-info icon-round icon-lg">
+								<i class='material-icons build-icon'>build</i>
+						</div>
+						<div class="description">
+							<h4 class="info-title">Flexible building skills</h4>
+							<h5 class="desc">
+								Justin understands that flexibility is paramount and that each application requires different solutions.  Justin has quickly brought himself 'up to speed' on a number of different programming languages, technological changes, or data analysis developments over the years and has drafted different tools whenever it was appropriate.
+							</h5>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div class="row strength">
-			<div class='row'>
-				<p>Collaborative, grass roots design relationship</p>
-			</div>
-			<div class='row'>
-				<a href="#">More Info</a>
-			</div>
-			<div class='row'>
-				<p>Justin has worn several 'hats' in his career (data analyst, business owner, leader of data science team, client relationship manager) making him uniquely qualified to speak to diverse audiences of a business.<b>No engineer or strategist left behind.</b></p>
-			</div>
-		</div>
-
-		<div class="row strength">
-			<div class='row'>
-				<p>Flexible mind and skillset for different product needs</p>
-			</div>
-			<div class='row'>
-				<a href="#">More Info</a>
-			</div>
-			<div class='row'>
-				<p>Justin understands that flexibility is paramount and that each application requires different solutions.  Justin has quickly brought himself 'up to speed' on a number of different programming language, technological, or data analysis developments over the years and has drafted different tools whenever it was appropriate.</p>
-			</div>
-		</div>
-
 	
 
 	<!-- Portfolio Section -->
+	<div class='container'>
 
 		<div class='row portfolio'>
 

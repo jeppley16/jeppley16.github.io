@@ -19,14 +19,14 @@ header {
     margin-right: 20px;
     padding-right: 10px;
     border-radius: 2% 50%;
-    /*order: -1;*/
+    order: -1;
 }
 
-#name {
-    color: #6BB9D3;
-    font-family: 'Electrolize', sans-serif;
-}
 
+/*###########  JumboTron Section ############*/
+
+
+/*Selects all text on the banner and applies formatting*/
 .banner-text {
     margin-left: 5px;
     margin-right: 5px;
@@ -35,27 +35,205 @@ header {
     text-align: right;
 }
 
+/*Change the font and color of the main title of the page*/
+#name {
+    color: #6BB9D3;
+    font-family: 'Electrolize', sans-serif;
+}
+
+/*Selects tagline of site*/
 #tagline {
     font-style: italic;
     color: white;
 }
 
-.strength {
-    text-align: center;
+
+/*#############  Areas of Expertise Section ###########*/
+
+/*/First row for the section header*/
+.text-center {
+    text-align: center
 }
 
-/*.portfolio {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}*/
+
+.title {
+    line-height: 1.33;
+    font-weight: 300;
+    letter-spacing: -.5px;
+    color: #223464;
+    margin-bottom: 5px
+}
+
+.space-50 {
+    height: 50px;
+    display: block
+}
+
+/*Category card formatting*/
+
+
+.info {
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+
+.info .icon {
+    margin-top: 0
+}
+
+.info .h4,
+.info h4 {
+    margin-top: 20px;
+    margin-bottom: 5px
+}
+
+
+/*Icon Formatting*/
+
+
+i.material-icons {
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+}
+
+i.material-icons:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: solid 2px;
+    transform: scale(0.8);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+i.material-icons:hover:after {
+    transform: scale(1);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}
+
+
+i.group-icon {
+    background-color: #9B7D2D;
+}
+
+i.group-icon:hover {
+    color: #9B7D2D;
+}
+
+i.group-icon:after {
+    border-color: #9B7D2D;
+}
+
+i.chart-icon {
+        background-color: #204C62;
+}
+
+i.chart-icon:hover {
+        color: #204C62;
+}
+
+i.chart-icon:after {
+        border-color: #204C62;
+}
+
+i.build-icon {
+        background-color: #9B442D;
+}
+
+i.build-icon:hover {
+        color: #9B442D;
+}
+
+i.build-icon:after {
+        border-color: #9B442D;
+}
+
+
+i.material-icons:hover {
+        background-color: transparent;
+        transform: rotate(90deg);
+        cursor: pointer;
+        box-shadow: none;
+}
+
+@media (min-width:601px) {
+    i.material-icons {
+        padding:10px;
+        margin:5px;
+        font-size:2rem;
+    }
+}
+
+@media (min-width:993px) {
+    i.material-icons {
+        padding:20px;
+        margin:10px;
+        font-size:4rem;
+    }
+    i.material-icons:after {
+        border-width:3px;
+        top:-3px;
+        left:-3px;
+    }
+}
+
+.info .description {
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 15px
+}
+
+.info .info-title {
+    margin: 25px 0 15px;
+    font-size: 22px;
+    letter-spacing: -.5px;
+    color: #223464
+}
+
+.desc {
+    margin-bottom: 50px;
+    margin-top: 12px;
+    font-weight: 300;
+    color: #5d648e;
+    line-height: 1.7
+}
+
+.info .desc {
+    margin-bottom: 15px
+}
+
+
+
+
+
+
+/*#############  Portfolio Section ###########*/
+
+
+
+
 
 .project {
     display: flex;
     justify-content: flex-start;
+    /*justify-content: space-between;*/
     flex-direction: column;
     align-items: center;
+    border: 2px solid gray;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
     /*flex-wrap: wrap;*/
 }
 
@@ -75,7 +253,9 @@ header {
 }
 
 .project-desc {
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .icons {
@@ -83,11 +263,7 @@ header {
     justify-content: space-between;
 }
 
-.icon {
-    width: auto;
-    height: 25px;
-    /*margin: 20px;
-}
+
 
 
 
