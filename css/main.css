@@ -10,7 +10,6 @@ header {
 }
 
 
-
 #circle1 {
     background: mediumaquamarine;
     height: 25px;
@@ -217,65 +216,30 @@ i.material-icons:hover {
 /*#############  Portfolio Section ###########*/
 
 
+.portfolio {
+    margin-left: 100px;
+}
+
+
+@media (max-width: 500px) {
+    .portfolio {
+        margin-left: 10px;
+    }
+}
+
+
+
 .card {
     margin-bottom: 15px;
-
 }
 
 
-.project {
-    /*display: flex;*/
-    /*justify-content: flex-start;*/
-    /*justify-content: space-between;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    border: 2px solid gray;
-    /*margin: 10px;*/
-    /*width: 300px;*/
-    /*height: 400px;*/
-    /*flex-wrap: wrap;*/
-}
-
-.tools {
-    display: flex;
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
 }
 
 
-.html {
-    flex: 1;
-}
-
-.css {
-    flex: 0.71;
-}
-
-.boot {
-    flex: 2;
-}
-
-.project-title {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.project-image {
-    transition: all 1s ease-in-out;
-}
-
-.project-image:hover {
-    transform: scale(1.1);
-}
-
-.project-desc {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 
