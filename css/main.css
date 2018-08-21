@@ -1,8 +1,14 @@
 body {
     margin: 15px;
     color: #0a2934;
+    padding-top: 100px;
 
 }
+
+.navbar {
+    background-color: #FFFBF6;
+}
+
 
 header {
     background-image: url(../images/clear.jpg);
@@ -20,6 +26,43 @@ header {
     border-radius: 2% 50%;
     order: -1;
 }
+
+.animated {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+
+@-webkit-keyframes rollIn {
+0% { 
+   opacity: 0; 
+   -webkit-transform: translateX(-100%) rotate(-120deg); 
+}
+100% { 
+   opacity: 1; 
+   -webkit-transform: translateX(0px) rotate(0deg); 
+}
+}
+
+@keyframes rollIn {
+0% { 
+   opacity: 0; 
+   transform: translateX(-100%) rotate(-120deg); 
+}
+100% { 
+   opacity: 1; 
+   transform: translateX(0px) rotate(0deg); 
+}
+}
+
+.rollIn {
+-webkit-animation-name: rollIn;
+animation-name: rollIn;
+}
+
+
+
 
 
 /*###########  JumboTron Section ############*/

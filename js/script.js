@@ -1,4 +1,4 @@
-// const BRANDICON = document.getElementsByClassName('circle')[0];
+const BRANDICON = document.getElementById('circle1');
 
 // // BRANDICON.addEventListener('click', function ()
 // // 	{
@@ -7,7 +7,7 @@
 // // })
 
 
-// document.addEventListener("DOMContentLoaded", function(event) {
-//     console.log("DOM fully loaded and parsed");
-    
-//   });
+document.addEventListener("DOMContentLoaded", function(event) {
+    // console.log("DOM fully loaded and parsed");
+    BRANDICON.classList.add('animated', 'rollIn');
+  });
