@@ -282,6 +282,11 @@ i.material-icons:hover {
     object-fit: cover;
 }
 
+.card-footer {
+    background-color: white;
+    border: none;
+}
+
 
 
 
